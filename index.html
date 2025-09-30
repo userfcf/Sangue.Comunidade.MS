@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sangue Comunidade MS - Doe Sangue, Salve Vidas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <header class="bg-white shadow-md sticky top-0 z-10">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-red-600">🩸 Sangue Comunidade MS</h1>
+      <div class="hidden md:flex space-x-6">
+        <a href="#inicio" class="text-gray-600 hover:text-red-600 transition">Início</a>
+        <a href="#sobre" class="text-gray-600 hover:text-red-600 transition">Sobre</a>
+        <a href="#requisitos" class="text-gray-600 hover:text-red-600 transition">Quem Pode Doar?</a>
+        <a href="#contato" class="text-gray-600 hover:text-red-600 transition">Contato</a>
+      </div>
+      <div class="md:hidden">
+        <button class="text-gray-600 hover:text-red-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="relative h-[60vh] flex items-center justify-center text-white text-center">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1582719478212-c85f464085b7?q=80&w=2070');"></div>
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="relative z-5 px-6">
+        <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight">Doe Sangue, Salve Vidas</h2>
+        <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">Um gesto simples que pode fazer a diferença para até quatro pessoas. Junte-se à nossa comunidade de heróis.</p>
+        <a href="#contato" class="mt-8 inline-block bg-red-600 text-white px-8 py-3 rounded-full shadow-lg hover:bg-red-700 transition font-bold text-lg">
+          Agende sua Doação
+        </a>
+      </div>
+    </section>
+
+    <section id="sobre" class="py-20 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold text-gray-800 mb-6">Sobre o Projeto</h3>
+        <p class="max-w-3xl mx-auto text-gray-600 text-lg">
+          O "Sangue Comunidade MS" é uma iniciativa dedicada a fortalecer a cultura da doação de sangue em Mato Grosso do Sul. Nossa missão é conectar doadores voluntários a hemocentros, facilitando o acesso à informação e simplificando o processo de agendamento para garantir que os estoques de sangue estejam sempre preparados para salvar vidas.
+        </p>
+      </div>
+    </section>
+
+    <section id="requisitos" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Requisitos Básicos para Doação</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <div class="text-4xl mb-4">🎂</div>
+            <h4 class="text-xl font-semibold mb-2">Idade</h4>
+            <p class="text-gray-600">Ter entre 16 e 69 anos. (Menores de 18 anos precisam de autorização).</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <div class="text-4xl mb-4">⚖️</div>
+            <h4 class="text-xl font-semibold mb-2">Peso Mínimo</h4>
+            <p class="text-gray-600">Pesar no mínimo 50kg.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <div class="text-4xl mb-4">❤️</div>
+            <h4 class="text-xl font-semibold mb-2">Boas Condições de Saúde</h4>
+            <p class="text-gray-600">Não ter tido febre, gripe ou resfriado nos últimos 7 dias.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <div class="text-4xl mb-4">🆔</div>
+            <h4 class="text-xl font-semibold mb-2">Documento Oficial</h4>
+            <p class="text-gray-600">Apresentar documento de identificação com foto, emitido por órgão oficial.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Fale Conosco ou Agende sua Doação</h3>
+        <form class="max-w-xl mx-auto">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-medium mb-2">Nome Completo</label>
+            <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+            <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+          </div>
+          <div class="mb-6">
+            <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem (Sugira um dia e local para doação)</label>
+            <textarea id="message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="bg-red-600 text-white px-8 py-3 rounded-full shadow-lg hover:bg-red-700 transition font-bold text-lg">
+              Enviar Mensagem
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="w-full text-center py-6 bg-gray-800 text-white">
+    <p>© 2025 Sangue Comunidade MS - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
