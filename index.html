@@ -1,100 +1,199 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sangue Comunidade MS - Doe Sangue, Salve Vidas</title>
+  
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Aplicando a fonte Poppins como padrão */
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Efeito de gradiente no texto */
+    .text-gradient {
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-700">
 
-  <header class="bg-white shadow-md sticky top-0 z-10">
+  <!-- ======================================================= -->
+  <!-- ======================= HEADER ======================== -->
+  <!-- ======================================================= -->
+  <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all duration-300">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-red-600">🩸 Sangue Comunidade MS</h1>
-      <div class="hidden md:flex space-x-6">
-        <a href="#inicio" class="text-gray-600 hover:text-red-600 transition">Início</a>
-        <a href="#sobre" class="text-gray-600 hover:text-red-600 transition">Sobre</a>
-        <a href="#requisitos" class="text-gray-600 hover:text-red-600 transition">Quem Pode Doar?</a>
-        <a href="#contato" class="text-gray-600 hover:text-red-600 transition">Contato</a>
-      </div>
-      <div class="md:hidden">
-        <button class="text-gray-600 hover:text-red-600">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-        </button>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-
-    <section id="inicio" class="relative h-[60vh] flex items-center justify-center text-white text-center">
-      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1582719478212-c85f464085b7?q=80&w=2070');"></div>
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div class="relative z-5 px-6">
-        <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight">Doe Sangue, Salve Vidas</h2>
-        <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">Um gesto simples que pode fazer a diferença para até quatro pessoas. Junte-se à nossa comunidade de heróis.</p>
-        <a href="#contato" class="mt-8 inline-block bg-red-600 text-white px-8 py-3 rounded-full shadow-lg hover:bg-red-700 transition font-bold text-lg">
+      <a href="#" class="text-2xl font-bold text-red-600">
+        🩸 Sangue Comunidade <span class="text-blue-600">MS</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#sobre" class="text-gray-600 hover:text-red-600 font-medium transition duration-300">Sobre</a>
+        <a href="#passos" class="text-gray-600 hover:text-red-600 font-medium transition duration-300">Como Doar</a>
+        <a href="#requisitos" class="text-gray-600 hover:text-red-600 font-medium transition duration-300">Requisitos</a>
+        <a href="#contato" class="bg-red-500 text-white px-5 py-2 rounded-full shadow-lg hover:bg-red-600 hover:scale-105 transition-transform duration-300 font-semibold">
           Agende sua Doação
         </a>
       </div>
-    </section>
+      <button class="md:hidden text-gray-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+      </button>
+    </nav>
+  </header>
 
-    <section id="sobre" class="py-20 bg-white">
-      <div class="container mx-auto px-6 text-center">
-        <h3 class="text-3xl font-bold text-gray-800 mb-6">Sobre o Projeto</h3>
-        <p class="max-w-3xl mx-auto text-gray-600 text-lg">
-          O "Sangue Comunidade MS" é uma iniciativa dedicada a fortalecer a cultura da doação de sangue em Mato Grosso do Sul. Nossa missão é conectar doadores voluntários a hemocentros, facilitando o acesso à informação e simplificando o processo de agendamento para garantir que os estoques de sangue estejam sempre preparados para salvar vidas.
-        </p>
+  <!-- ======================================================= -->
+  <!-- ======================== MAIN ========================= -->
+  <!-- ======================================================= -->
+  <main>
+
+    <!-- Seção Hero -->
+    <section id="inicio" class="relative min-h-[90vh] flex items-center">
+      <div class="absolute inset-0 bg-cover bg-center bg-fixed" style="background-image: url('https://images.unsplash.com/photo-1615461066841-6116e61058f4?q=80&w=2574');"></div>
+      <div class="absolute inset-0 bg-white/80"></div>
+      <div class="container mx-auto px-6 relative z-10 text-center md:text-left">
+        <div class="max-w-2xl">
+          <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+            Um simples gesto.
+            <span class="bg-gradient-to-r from-red-500 to-blue-600 text-gradient">
+              Quatro vidas salvas.
+            </span>
+          </h1>
+          <p class="mt-6 text-lg text-gray-600">
+            Faça parte da comunidade que pulsa por solidariedade em Mato Grosso do Sul. Sua doação é a esperança que muitos precisam para continuar vivendo.
+          </p>
+          <a href="#contato" class="mt-10 inline-block bg-red-500 text-white px-8 py-4 rounded-full shadow-xl hover:bg-red-600 transform hover:-translate-y-1 transition-all duration-300 font-bold text-lg">
+            Quero Ser um Herói
+          </a>
+        </div>
       </div>
     </section>
 
-    <section id="requisitos" class="py-20 bg-gray-100">
-      <div class="container mx-auto px-6">
-        <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Requisitos Básicos para Doação</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow-md text-center">
-            <div class="text-4xl mb-4">🎂</div>
-            <h4 class="text-xl font-semibold mb-2">Idade</h4>
-            <p class="text-gray-600">Ter entre 16 e 69 anos. (Menores de 18 anos precisam de autorização).</p>
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-24 bg-white">
+      <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+        <div class="order-2 md:order-1">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Nossa Missão é Conectar Corações</h2>
+          <p class="text-gray-600 mb-6">
+            O projeto Sangue Comunidade MS nasceu da necessidade de fortalecer os laços de solidariedade e garantir que os hemocentros de nosso estado tenham sempre um estoque de sangue seguro e disponível. Atuamos como uma ponte, informando e mobilizando a população sobre a importância vital da doação de sangue.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start space-x-3">
+              <span class="flex-shrink-0 h-6 w-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center">✓</span>
+              <p>Facilitamos o acesso à informação sobre locais e horários de coleta.</p>
+            </div>
+            <div class="flex items-start space-x-3">
+              <span class="flex-shrink-0 h-6 w-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center">✓</span>
+              <p>Promovemos campanhas de conscientização para novos doadores.</p>
+            </div>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-md text-center">
-            <div class="text-4xl mb-4">⚖️</div>
-            <h4 class="text-xl font-semibold mb-2">Peso Mínimo</h4>
-            <p class="text-gray-600">Pesar no mínimo 50kg.</p>
+        </div>
+        <div class="order-1 md:order-2">
+          <!-- SUGESTÃO: Use uma foto real de um hemocentro ou de doadores -->
+          <img src="https://images.unsplash.com/photo-1542841601-961078a63c9b?q=80&w=2670" alt="Profissional de saúde preparando para coleta de sangue" class="rounded-xl shadow-2xl w-full h-auto">
+        </div>
+      </div>
+    </section>
+    
+    <!-- Seção Passo a Passo -->
+    <section id="passos" class="py-24 bg-gray-50">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Doar Sangue é Simples e Seguro</h2>
+        <p class="max-w-2xl mx-auto text-gray-600 mb-16">Siga os 3 passos para fazer a diferença na vida de alguém.</p>
+        <div class="relative grid md:grid-cols-3 gap-12">
+          <!-- Linha conectora -->
+          <div class="hidden md:block absolute top-1/2 left-0 w-full border-t-2 border-dashed border-gray-300" style="transform: translateY(-50%); z-index: 0;"></div>
+          
+          <!-- Passo 1 -->
+          <div class="relative bg-white p-8 rounded-xl shadow-lg border-t-4 border-red-500 z-10">
+            <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-red-500 text-white h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-gray-50">1</div>
+            <h3 class="text-xl font-semibold text-gray-900 mt-10">Agendamento</h3>
+            <p class="mt-2 text-gray-600">Entre em contato conosco para encontrar o melhor dia, horário e local para sua doação.</p>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-md text-center">
-            <div class="text-4xl mb-4">❤️</div>
-            <h4 class="text-xl font-semibold mb-2">Boas Condições de Saúde</h4>
-            <p class="text-gray-600">Não ter tido febre, gripe ou resfriado nos últimos 7 dias.</p>
+          <!-- Passo 2 -->
+          <div class="relative bg-white p-8 rounded-xl shadow-lg border-t-4 border-red-500 z-10">
+            <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-red-500 text-white h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-gray-50">2</div>
+            <h3 class="text-xl font-semibold text-gray-900 mt-10">Triagem e Coleta</h3>
+            <p class="mt-2 text-gray-600">Um processo rápido e seguro, onde profissionais de saúde garantem seu bem-estar.</p>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-md text-center">
-            <div class="text-4xl mb-4">🆔</div>
-            <h4 class="text-xl font-semibold mb-2">Documento Oficial</h4>
-            <p class="text-gray-600">Apresentar documento de identificação com foto, emitido por órgão oficial.</p>
+          <!-- Passo 3 -->
+          <div class="relative bg-white p-8 rounded-xl shadow-lg border-t-4 border-red-500 z-10">
+            <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-red-500 text-white h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-gray-50">3</div>
+            <h3 class="text-xl font-semibold text-gray-900 mt-10">Lanche e Repouso</h3>
+            <p class="mt-2 text-gray-600">Após a doação, você recebe um lanche delicioso para repor as energias. Missão cumprida!</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contato" class="py-20 bg-white">
+    <!-- Seção Requisitos -->
+    <section id="requisitos" class="py-24 bg-white">
       <div class="container mx-auto px-6">
-        <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Fale Conosco ou Agende sua Doação</h3>
-        <form class="max-w-xl mx-auto">
-          <div class="mb-4">
-            <label for="name" class="block text-gray-700 font-medium mb-2">Nome Completo</label>
-            <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Você Pode Ser um Herói?</h2>
+        <div class="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 h-12 w-12 bg-green-100 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></div>
+            <div>
+              <h3 class="font-semibold text-lg text-gray-900">Documento com Foto</h3>
+              <p class="text-gray-600">Apresentar documento de identidade oficial e original.</p>
+            </div>
           </div>
-          <div class="mb-4">
-            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-            <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 h-12 w-12 bg-green-100 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></div>
+            <div>
+              <h3 class="font-semibold text-lg text-gray-900">Idade</h3>
+              <p class="text-gray-600">Ter entre 16 e 69 anos. (Menores de 18, com autorização).</p>
+            </div>
           </div>
-          <div class="mb-6">
-            <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem (Sugira um dia e local para doação)</label>
-            <textarea id="message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 h-12 w-12 bg-green-100 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></div>
+            <div>
+              <h3 class="font-semibold text-lg text-gray-900">Peso Mínimo</h3>
+              <p class="text-gray-600">Pesar no mínimo 50kg.</p>
+            </div>
           </div>
-          <div class="text-center">
-            <button type="submit" class="bg-red-600 text-white px-8 py-3 rounded-full shadow-lg hover:bg-red-700 transition font-bold text-lg">
-              Enviar Mensagem
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 h-12 w-12 bg-green-100 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></div>
+            <div>
+              <h3 class="font-semibold text-lg text-gray-900">Estar Saudável</h3>
+              <p class="text-gray-600">Sentir-se bem, sem gripe, resfriado ou febre nos últimos 7 dias.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Seção de Contato -->
+    <section id="contato" class="py-24 bg-gray-100">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Pronto para Fazer a Diferença?</h2>
+        <p class="max-w-2xl mx-auto text-gray-600 mb-12">Envie-nos uma mensagem para tirar dúvidas ou para agendar sua doação. Nossa equipe entrará em contato o mais rápido possível.</p>
+        <form class="max-w-2xl mx-auto text-left">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700">Nome</label>
+              <input type="text" id="name" class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+              <input type="email" id="email" class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500">
+            </div>
+          </div>
+          <div class="mt-6">
+            <label for="message" class="block text-sm font-medium text-gray-700">Sua Mensagem</label>
+            <textarea id="message" rows="5" class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500"></textarea>
+          </div>
+          <div class="mt-8 text-center">
+            <button type="submit" class="bg-red-500 text-white px-10 py-4 rounded-full shadow-xl hover:bg-red-600 transform hover:-translate-y-1 transition-all duration-300 font-bold text-lg">
+              Enviar e Agendar
             </button>
           </div>
         </form>
@@ -103,8 +202,34 @@
 
   </main>
 
-  <footer class="w-full text-center py-6 bg-gray-800 text-white">
-    <p>© 2025 Sangue Comunidade MS - Todos os direitos reservados</p>
+  <!-- ======================================================= -->
+  <!-- ======================= FOOTER ======================== -->
+  <!-- ======================================================= -->
+  <footer class="bg-gray-900 text-white">
+    <div class="container mx-auto px-6 py-12">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">🩸 Sangue Comunidade MS</h3>
+          <p class="text-gray-400">Conectando doadores e salvando vidas em Mato Grosso do Sul.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Navegação</h3>
+          <ul class="space-y-2">
+            <li><a href="#sobre" class="text-gray-400 hover:text-white">Sobre</a></li>
+            <li><a href="#passos" class="text-gray-400 hover:text-white">Como Doar</a></li>
+            <li><a href="#requisitos" class="text-gray-400 hover:text-white">Requisitos</a></li>
+            <li><a href="#contato" class="text-gray-400 hover:text-white">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Siga-nos</h3>
+          <p class="text-gray-400">Em breve em todas as redes sociais.</p>
+        </div>
+      </div>
+      <div class="mt-12 border-t border-gray-800 pt-6 text-center text-gray-500">
+        <p>&copy; 2025 Sangue Comunidade MS. Desenvolvido para fins acadêmicos.</p>
+      </div>
+    </div>
   </footer>
 
 </body>
