@@ -1,9 +1,9 @@
 -- Arquivo: schema.sql
 -- Descrição: Script para criação do banco de dados e tabelas do projeto Sangue Comunidade MS.
--- Autor: [Seu Nome Completo]
+-- Autor: [Felipe]
 -- Data: 30/09/2025
 
--- --- CRIAÇÃO DAS TABELAS ---
+--- CRIAÇÃO DAS TABELAS ---
 
 -- Tabela: Doadores
 -- Armazena as informações pessoais de cada doador.
@@ -30,7 +30,7 @@ CREATE TABLE Agendamentos (
 );
 
 
--- --- INSERÇÃO DE DADOS DE EXEMPLO ---
+--- INSERÇÃO DE DADOS DE EXEMPLO ---
 
 -- Inserindo 3 registros na tabela de Doadores
 INSERT INTO Doadores (nome_completo, email, telefone, tipo_sanguineo, data_nascimento) VALUES
