@@ -14,11 +14,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <style>
-    /* Aplicando a fonte Poppins como padrão */
     body {
       font-family: 'Poppins', sans-serif;
     }
-    /* Efeito de gradiente no texto */
     .text-gradient {
       background-clip: text;
       -webkit-background-clip: text;
@@ -77,28 +75,22 @@
       </div>
     </section>
 
-    <!-- Seção Sobre -->
+    <!-- Seção Sobre (ajustada: sem imagem e centralizada) -->
     <section id="sobre" class="py-24 bg-white">
-      <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-        <div class="order-2 md:order-1">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Nossa Missão é Conectar Corações</h2>
-          <p class="text-gray-600 mb-6">
-            O projeto Sangue Comunidade MS nasceu da necessidade de fortalecer os laços de solidariedade e garantir que os hemocentros de nosso estado tenham sempre um estoque de sangue seguro e disponível. Atuamos como uma ponte, informando e mobilizando a população sobre a importância vital da doação de sangue.
-          </p>
-          <div class="space-y-4">
-            <div class="flex items-start space-x-3">
-              <span class="flex-shrink-0 h-6 w-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center">✓</span>
-              <p>Facilitamos o acesso à informação sobre locais e horários de coleta.</p>
-            </div>
-            <div class="flex items-start space-x-3">
-              <span class="flex-shrink-0 h-6 w-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center">✓</span>
-              <p>Promovemos campanhas de conscientização para novos doadores.</p>
-            </div>
+      <div class="container mx-auto px-6 flex flex-col items-center text-center max-w-3xl">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Nossa Missão é Conectar Corações</h2>
+        <p class="text-gray-600 mb-6">
+          O projeto Sangue Comunidade MS nasceu da necessidade de fortalecer os laços de solidariedade e garantir que os hemocentros de nosso estado tenham sempre um estoque de sangue seguro e disponível. Atuamos como uma ponte, informando e mobilizando a população sobre a importância vital da doação de sangue.
+        </p>
+        <div class="space-y-4">
+          <div class="flex items-start space-x-3 justify-center">
+            <span class="flex-shrink-0 h-6 w-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center">✓</span>
+            <p>Facilitamos o acesso à informação sobre locais e horários de coleta.</p>
           </div>
-        </div>
-        <div class="order-1 md:order-2">
-          <!-- SUGESTÃO: Use uma foto real de um hemocentro ou de doadores -->
-          <img src="https://images.unsplash.com/photo-1542841601-961078a63c9b?q=80&w=2670" alt="Profissional de saúde preparando para coleta de sangue" class="rounded-xl shadow-2xl w-full h-auto">
+          <div class="flex items-start space-x-3 justify-center">
+            <span class="flex-shrink-0 h-6 w-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center">✓</span>
+            <p>Promovemos campanhas de conscientização para novos doadores.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -109,22 +101,17 @@
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Doar Sangue é Simples e Seguro</h2>
         <p class="max-w-2xl mx-auto text-gray-600 mb-16">Siga os 3 passos para fazer a diferença na vida de alguém.</p>
         <div class="relative grid md:grid-cols-3 gap-12">
-          <!-- Linha conectora -->
           <div class="hidden md:block absolute top-1/2 left-0 w-full border-t-2 border-dashed border-gray-300" style="transform: translateY(-50%); z-index: 0;"></div>
-          
-          <!-- Passo 1 -->
           <div class="relative bg-white p-8 rounded-xl shadow-lg border-t-4 border-red-500 z-10">
             <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-red-500 text-white h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-gray-50">1</div>
             <h3 class="text-xl font-semibold text-gray-900 mt-10">Agendamento</h3>
             <p class="mt-2 text-gray-600">Entre em contato conosco para encontrar o melhor dia, horário e local para sua doação.</p>
           </div>
-          <!-- Passo 2 -->
           <div class="relative bg-white p-8 rounded-xl shadow-lg border-t-4 border-red-500 z-10">
             <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-red-500 text-white h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-gray-50">2</div>
             <h3 class="text-xl font-semibold text-gray-900 mt-10">Triagem e Coleta</h3>
             <p class="mt-2 text-gray-600">Um processo rápido e seguro, onde profissionais de saúde garantem seu bem-estar.</p>
           </div>
-          <!-- Passo 3 -->
           <div class="relative bg-white p-8 rounded-xl shadow-lg border-t-4 border-red-500 z-10">
             <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-red-500 text-white h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-gray-50">3</div>
             <h3 class="text-xl font-semibold text-gray-900 mt-10">Lanche e Repouso</h3>
